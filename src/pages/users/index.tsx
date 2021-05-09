@@ -27,7 +27,7 @@ export default function UserList() {
   const { data, isLoading, error } = useQuery(
     'users',
     async () => {
-      const response = await fetch('http://localhost:3000/api/users');
+      const response = await fetch(`${process.env.API_ENDPOINT}/users`);
       const data = await response.json();
 
       const users = data.users.map(user => {
