@@ -31,6 +31,7 @@
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "camelcase": 0,
+    "func-names": 0,
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -52,7 +53,8 @@
       }
     ],
     "react/jsx-props-no-spreading": 0,
-    "react/react-in-jsx-scope": 0
+    "react/react-in-jsx-scope": 0,
+    "react/require-default-props": 0
   },
   "settings": {
     "react": {
