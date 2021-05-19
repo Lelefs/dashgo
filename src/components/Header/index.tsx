@@ -12,7 +12,7 @@ export function Header() {
 
   const isWideVersion = useBreakpointValue({
     base: false,
-    lg: true
+    lg: true,
   });
   return (
     <Flex
@@ -25,7 +25,6 @@ export function Header() {
       align="center"
       px="6"
     >
-
       {!isWideVersion && (
         <IconButton
           aria-label="Open navigation"
@@ -34,9 +33,7 @@ export function Header() {
           variant="unstyled"
           onClick={onOpen}
           mr="2"
-        >
-
-        </IconButton>
+        />
       )}
 
       <Logo />
@@ -48,5 +45,5 @@ export function Header() {
         <Profile showProfileData={isWideVersion} />
       </Flex>
     </Flex>
-  )
+  );
 }
